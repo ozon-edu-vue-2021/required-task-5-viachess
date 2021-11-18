@@ -8,7 +8,7 @@
             v-for="product in cart"
             :key="product.uid"
             :product="product"
-          ></cart-card>
+          />
         </div>
         <div class="order-section" v-if="length > 0">
           <v-btn
@@ -21,11 +21,11 @@
             <h4>Ваша корзина</h4>
             <div class="order-section__info-details">
               <p>Товары ({{ length }})</p>
-              <h4>{{ total }} ₽</h4>
+              <h4>{{ cartTotal }} ₽</h4>
             </div>
             <div class="order-section__info-total">
               <h3>Общая стоимость</h3>
-              <h3>{{ total }}₽</h3>
+              <h3>{{ cartTotal }}₽</h3>
             </div>
           </div>
         </div>
@@ -36,12 +36,7 @@
 </template>
 
 <script>
-import { mapGetters } from "vuex";
-import {
-  GET_CART,
-  GET_CART_LENGTH,
-  GET_CART_TOTAL,
-} from "../store/mutation-types";
+import { mapActions, mapGetters, mapState } from "vuex";
 import CartCard from "../components/CartCard.vue";
 
 export default {
@@ -49,6 +44,9 @@ export default {
     CartCard,
   },
   methods: {
+    ...mapActions("cart", {
+      updateCartTotal: "updateCartTotal",
+    }),
     submitProducts: function () {
       const submitText = this.cart
         .map((item) => {
@@ -62,11 +60,17 @@ export default {
       alert(submitText);
     },
   },
+  created: function () {
+    this.updateCartTotal();
+  },
   computed: {
-    ...mapGetters({
-      cart: GET_CART,
-      length: GET_CART_LENGTH,
-      total: GET_CART_TOTAL,
+    ...mapState("cart", {
+      cartTotal: "total",
+    }),
+    ...mapGetters("cart", {
+      cart: "getCart",
+      length: "getCartLength",
+      getCartTotal: "getCartTotal",
     }),
   },
 };

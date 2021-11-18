@@ -3,9 +3,16 @@
     <v-main>
       <v-app-bar elevation="1" class="align-center">
         <v-toolbar-title class="mr-5">Test Shop</v-toolbar-title>
-        <router-link to="/" class="nav-link">Товары</router-link>
+        <router-link
+          v-for="route in routeLinks"
+          :to="route.path"
+          class="nav-link"
+          :key="route.name"
+          >{{ route.name }}</router-link
+        >
+        <!-- <router-link to="/" class="nav-link">Товары</router-link>
         <router-link to="/cart" class="nav-link">Корзина</router-link>
-        <router-link to="/favorites" class="nav-link">Избранное</router-link>
+        <router-link to="/favorites" class="nav-link">Избранное</router-link> -->
       </v-app-bar>
       <router-view></router-view>
     </v-main>
@@ -13,6 +20,8 @@
 </template>
 
 <script>
+import { routes } from "@/router";
+
 export default {
   name: "App",
 
@@ -21,6 +30,11 @@ export default {
   data: () => ({
     //
   }),
+  computed: {
+    routeLinks: function () {
+      return routes;
+    },
+  },
 };
 </script>
 

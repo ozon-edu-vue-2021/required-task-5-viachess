@@ -8,7 +8,7 @@
             v-for="product in favorites"
             :key="product.uid"
             :product="product"
-          ></product-card>
+          />
         </div>
         <h3 v-else class="my-3 ml-4">Список пуст</h3>
       </v-col>
@@ -19,15 +19,14 @@
 <script>
 import ProductCard from "@/components/ProductCard.vue";
 import { mapGetters } from "vuex";
-import { GET_PRODUCTS } from "../store/mutation-types";
 
 export default {
   components: {
     ProductCard,
   },
   computed: {
-    ...mapGetters({
-      products: GET_PRODUCTS,
+    ...mapGetters("products", {
+      products: "getProducts",
     }),
     favorites: function () {
       const filteredProducts = this.products.filter(

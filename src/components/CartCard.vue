@@ -18,7 +18,7 @@
         <button
           type="button"
           class="cart-card__info-action"
-          @click="removeFromCart"
+          @click="removeFromCartMethod"
         >
           Удалить
         </button>
@@ -34,7 +34,6 @@
         outlined
         dense
         class="cart-card__amount"
-        @change="changeProductAmount"
       ></v-select>
     </div>
   </div>
@@ -42,57 +41,35 @@
 
 <script>
 import { mapActions, mapGetters } from "vuex";
-import {
-  GET_CART,
-  GET_CART_ITEM,
-  ADD_TO_CART,
-  REMOVE_FROM_CART,
-  SET_ITEM_AMOUNT,
-  TOGGLE_FAVORITE,
-} from "../store/mutation-types";
 
 export default {
-  data: () => ({
-    amountSelectCurrentValue: null,
-  }),
+  data: () => ({}),
   props: {
     product: {
       type: Object,
     },
   },
-
   components: {},
-  mounted: async function () {
-    const amount = await this.GET_CART_ITEM({
-      uid: this.product.uid,
-    });
-    this.amountSelectCurrentValue = amount;
-  },
+  mounted: function () {},
   methods: {
-    ...mapActions({
-      ADD_TO_CART,
-      GET_CART_ITEM,
-      REMOVE_FROM_CART,
-      SET_ITEM_AMOUNT,
-      TOGGLE_FAVORITE,
+    ...mapActions("cart", {
+      removeFromCart: "removeFromCart",
+      setItemAmount: "setItemAmount",
+    }),
+    ...mapActions("products", {
+      toggleFavorite: "toggleFavorite",
     }),
     addToFavorites() {
-      this.TOGGLE_FAVORITE(this.product.uid);
+      this.toggleFavorite(this.product.uid);
     },
-    changeProductAmount(newAmount) {
-      this.SET_ITEM_AMOUNT({
-        uid: this.product.uid,
-        newAmount: newAmount,
-      });
-    },
-    removeFromCart() {
-      this.REMOVE_FROM_CART({ uid: this.product.uid });
+    removeFromCartMethod() {
+      this.removeFromCart({ uid: this.product.uid });
     },
   },
   watch: {},
   computed: {
-    ...mapGetters({
-      GET_CART,
+    ...mapGetters("cart", {
+      getCartItem: "getCartItem",
     }),
     selectedProduct: function () {
       return this.select;
@@ -106,6 +83,20 @@ export default {
         arr.push(i);
       }
       return arr;
+    },
+    amountSelectCurrentValue: {
+      get: function () {
+        const amount = this.getCartItem({
+          uid: this.product.uid,
+        });
+        return amount;
+      },
+      set(newAmount) {
+        this.setItemAmount({
+          uid: this.product.uid,
+          newAmount,
+        });
+      },
     },
   },
 };

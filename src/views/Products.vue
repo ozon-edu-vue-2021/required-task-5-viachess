@@ -8,7 +8,7 @@
             v-for="product in products"
             :key="product.uid"
             :product="product"
-          ></product-card>
+          />
         </div>
       </v-col>
     </v-row>
@@ -17,7 +17,6 @@
 
 <script>
 import ProductCard from "../components/ProductCard.vue";
-import { GET_PRODUCTS, SET_PRODUCTS } from "../store/mutation-types";
 import { mapActions, mapGetters } from "vuex";
 
 export default {
@@ -29,16 +28,16 @@ export default {
     ProductCard,
   },
   methods: {
-    ...mapActions({
-      SET_PRODUCTS: SET_PRODUCTS,
+    ...mapActions("products", {
+      setProducts: "setProducts",
     }),
   },
   created: function () {
-    this.SET_PRODUCTS();
+    this.setProducts();
   },
   computed: {
-    ...mapGetters({
-      products: GET_PRODUCTS,
+    ...mapGetters("products", {
+      products: "getProducts",
     }),
   },
 };

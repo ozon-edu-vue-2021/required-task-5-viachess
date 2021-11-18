@@ -26,7 +26,7 @@
     </v-list-item>
     <v-card-actions class="product-card__actions">
       <v-btn
-        @click="addToCart"
+        @click="addToCartMethod"
         class="add-to-cart-btn px-4 py-5 ml-2 mb-2"
         elevation="0"
       >
@@ -50,12 +50,7 @@
 
 <script>
 import HeartSVG from "../assets/icons/heart.svg";
-import { mapActions, mapGetters } from "vuex";
-import {
-  GET_CART,
-  ADD_TO_CART,
-  TOGGLE_FAVORITE,
-} from "../store/mutation-types";
+import { mapActions } from "vuex";
 
 export default {
   data: () => ({
@@ -71,24 +66,23 @@ export default {
   },
   created: function () {},
   methods: {
-    ...mapActions({
-      ADD_TO_CART,
-      TOGGLE_FAVORITE,
+    ...mapActions("cart", {
+      addToCart: "addToCart",
     }),
-    addToCart() {
-      this.ADD_TO_CART({
+    ...mapActions("products", {
+      toggleFavorite: "toggleFavorite",
+    }),
+    addToCartMethod() {
+      this.addToCart({
         product: this.product,
         amount: this.amountSelectCurrentValue,
       });
     },
     addToFavorites() {
-      this.TOGGLE_FAVORITE(this.product.uid);
+      this.toggleFavorite(this.product.uid);
     },
   },
   computed: {
-    ...mapGetters({
-      GET_CART,
-    }),
     isFavorited: function () {
       return this.product.favorited;
     },
