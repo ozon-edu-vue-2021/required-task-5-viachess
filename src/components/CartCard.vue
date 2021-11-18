@@ -95,7 +95,6 @@ export default {
       GET_CART,
     }),
     selectedProduct: function () {
-      console.log(this.select);
       return this.select;
     },
     isFavorited: function () {

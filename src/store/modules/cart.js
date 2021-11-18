@@ -40,9 +40,6 @@ export default {
       inCart.amount = newAmount;
     },
     [REMOVE_FROM_CART]: function (state, { uid }) {
-      console.log("REMOVE FROM CART");
-      console.log(state);
-      console.log(uid);
       state.cart = state.cart.filter((item) => item.uid !== uid);
     },
   },
