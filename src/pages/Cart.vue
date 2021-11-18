@@ -3,15 +3,18 @@
     <v-row>
       <v-col class="cart-container">
         <h2 class="cart-container__title my-3">Корзина</h2>
-        <div class="cart-list__container">
+        <div class="cart-list__container" v-if="length > 0">
           <cart-card
             v-for="product in cart"
             :key="product.uid"
             :product="product"
           ></cart-card>
         </div>
-        <div class="order-section">
-          <v-btn color="success" class="order-section__btn"
+        <div class="order-section" v-if="length > 0">
+          <v-btn
+            color="success"
+            class="order-section__btn"
+            @click="submitProducts"
             >Перейти к оформлению</v-btn
           >
           <div class="order-section__info">
@@ -26,6 +29,7 @@
             </div>
           </div>
         </div>
+        <h4 v-else>Корзина пуста</h4>
       </v-col>
     </v-row>
   </v-container>
@@ -44,16 +48,26 @@ export default {
   components: {
     CartCard,
   },
+  methods: {
+    submitProducts: function () {
+      const submitText = this.cart
+        .map((item) => {
+          return `{
+          Название: ${item.title},
+          Цена: ${item.price},
+          Количество: ${item.amount}
+        }`;
+        })
+        .join("\n");
+      alert(submitText);
+    },
+  },
   computed: {
     ...mapGetters({
       cart: GET_CART,
       length: GET_CART_LENGTH,
       total: GET_CART_TOTAL,
     }),
-
-    // cart: function () {
-
-    // },
   },
 };
 </script>
