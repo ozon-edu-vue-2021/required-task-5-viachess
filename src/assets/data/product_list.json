@@ -1,0 +1,242 @@
+[
+  {
+    "id": 1058,
+    "uid": "56d09bab-8f6f-468c-9088-10423a030d65",
+    "dish": "Pierogi",
+    "description": "Breaded fried chicken with waffles, and a side of maple syrup.",
+    "ingredient": "Ricotta",
+    "measurement": "1/2 pint"
+  },
+  {
+    "id": 4995,
+    "uid": "d4dcb047-2e11-4695-834a-569a1521534f",
+    "dish": "Scotch Eggs",
+    "description": "28-day aged 300g USDA Certified Prime Ribeye, rosemary-thyme garlic butter, with choice of two sides.",
+    "ingredient": "Apricots",
+    "measurement": "1/4 quart"
+  },
+  {
+    "id": 5916,
+    "uid": "079d6a3e-efe6-4433-8491-7d763679682b",
+    "dish": "Risotto with Seafood",
+    "description": "Breaded fried chicken with waffles. Served with maple syrup.",
+    "ingredient": "Brown Rice",
+    "measurement": "1/3 tablespoon"
+  },
+  {
+    "id": 3809,
+    "uid": "b4e8b9ad-65bd-46ba-b655-a66605508414",
+    "dish": "French Toast",
+    "description": "Creamy mascarpone cheese and custard layered between espresso and rum soaked house-made ladyfingers, topped with Valrhona cocoa powder.",
+    "ingredient": "Kumera",
+    "measurement": "3 cup"
+  },
+  {
+    "id": 1405,
+    "uid": "a03f79f1-1fae-4a6e-a2d0-8caf81b7d6b0",
+    "dish": "Stinky Tofu",
+    "description": "Thick slices of French toast bread, brown sugar, half-and-half and vanilla, topped with powdered sugar. With two eggs served any style, and your choice of smoked bacon or smoked ham.",
+    "ingredient": "Pecan Nut",
+    "measurement": "3 cup"
+  },
+  {
+    "id": 7209,
+    "uid": "6c36fe79-9d7f-45b9-bd98-4178665730be",
+    "dish": "Meatballs with Sauce",
+    "description": "Thick slices of French toast bread, brown sugar, half-and-half and vanilla, topped with powdered sugar. With two eggs served any style, and your choice of smoked bacon or smoked ham.",
+    "ingredient": "Purple Carrot",
+    "measurement": "3 gallon"
+  },
+  {
+    "id": 3172,
+    "uid": "cb3486ae-a18a-4fcf-a1ad-4337504fbc33",
+    "dish": "Seafood Paella",
+    "description": "Two butter croissants of your choice (plain, almond or cheese). With a side of herb butter or house-made hazelnut spread.",
+    "ingredient": "Marigold",
+    "measurement": "1 teaspoon"
+  },
+  {
+    "id": 7199,
+    "uid": "952a15a4-5b57-4fc9-9680-c0f4ec549c87",
+    "dish": "Pasta with Tomato and Basil",
+    "description": "Smoked salmon, poached eggs, diced red onions and Hollandaise sauce on an English muffin. With a side of roasted potatoes.",
+    "ingredient": "Fish Sauce",
+    "measurement": "1 tablespoon"
+  },
+  {
+    "id": 7924,
+    "uid": "b639ebb3-0deb-4678-9ba6-cc3c432d3d5c",
+    "dish": "Pierogi",
+    "description": "Three egg omelet with Roquefort cheese, chives, and ham. With a side of roasted potatoes, and your choice of toast or croissant.",
+    "ingredient": "Mahlab",
+    "measurement": "1/2 teaspoon"
+  },
+  {
+    "id": 6350,
+    "uid": "6e239356-d5a7-422b-bd55-1bee80118b25",
+    "dish": "Pasta Carbonara",
+    "description": "Breaded fried chicken with waffles. Served with maple syrup.",
+    "ingredient": "Broccolini",
+    "measurement": "1/3 teaspoon"
+  },
+  {
+    "id": 7414,
+    "uid": "c0a64dff-3983-45e4-a56e-7f8c068790d2",
+    "dish": "Sushi",
+    "description": "Fresh Norwegian salmon, lightly brushed with our herbed Dijon mustard sauce, with choice of two sides.",
+    "ingredient": "Caraway Seed",
+    "measurement": "1/3 pint"
+  },
+  {
+    "id": 6839,
+    "uid": "cf7b412a-30e5-4b0d-bb8d-081db214c5e2",
+    "dish": "Philadelphia Maki",
+    "description": "Granny Smith apples mixed with brown sugar and butter filling, in a flaky all-butter crust, with ice cream.",
+    "ingredient": "Green Tea",
+    "measurement": "1/4 tablespoon"
+  },
+  {
+    "id": 8997,
+    "uid": "375409a9-4c83-486c-afbe-029dd00f3402",
+    "dish": "Pasta Carbonara",
+    "description": "Three eggs with cilantro, tomatoes, onions, avocados and melted Emmental cheese. With a side of roasted potatoes, and your choice of toast or croissant.",
+    "ingredient": "Raisin",
+    "measurement": "2 cup"
+  },
+  {
+    "id": 693,
+    "uid": "9628e6ad-a0e5-4a08-8506-13f9ad633940",
+    "dish": "Caesar Salad",
+    "description": "Three egg whites with spinach, mushrooms, caramelized onions, tomatoes and low-fat feta cheese. With herbed quinoa, and your choice of rye or whole-grain toast.",
+    "ingredient": "Soymilk",
+    "measurement": "1/3 quart"
+  },
+  {
+    "id": 578,
+    "uid": "dd92f140-038a-4dcb-96e6-4beedd5759db",
+    "dish": "Tiramisù",
+    "description": "28-day aged 300g USDA Certified Prime Ribeye, rosemary-thyme garlic butter, with choice of two sides.",
+    "ingredient": "Rosemary",
+    "measurement": "1 tablespoon"
+  },
+  {
+    "id": 3425,
+    "uid": "0f97e678-8fc1-41cd-acd9-a14516d2e9f6",
+    "dish": "Kebab",
+    "description": "Two buttermilk waffles, topped with whipped cream and maple syrup, a side of two eggs served any style, and your choice of smoked bacon or smoked ham.",
+    "ingredient": "Fingerlime",
+    "measurement": "1/2 tablespoon"
+  },
+  {
+    "id": 5229,
+    "uid": "b7ffaa7e-0086-49e2-9ea7-31b169ac7a32",
+    "dish": "Tuna Sashimi",
+    "description": "28-day aged 300g USDA Certified Prime Ribeye, rosemary-thyme garlic butter, with choice of two sides.",
+    "ingredient": "Cheddar",
+    "measurement": "2 tablespoon"
+  },
+  {
+    "id": 4003,
+    "uid": "cec92340-633c-40b8-b712-f1f62382e6c8",
+    "dish": "Sushi",
+    "description": "28-day aged 300g USDA Certified Prime Ribeye, rosemary-thyme garlic butter, with choice of two sides.",
+    "ingredient": "Anchovies",
+    "measurement": "1/4 pint"
+  },
+  {
+    "id": 5283,
+    "uid": "74aae0b1-acc1-4c4f-a510-e490a4f6e299",
+    "dish": "Pizza",
+    "description": "Fresh Norwegian salmon, lightly brushed with our herbed Dijon mustard sauce, with choice of two sides.",
+    "ingredient": "Quinoa",
+    "measurement": "1/2 gallon"
+  },
+  {
+    "id": 3901,
+    "uid": "bea12b23-ec58-41e4-ac8f-8b061c225e4d",
+    "dish": "Poke",
+    "description": "Fresh Norwegian salmon, lightly brushed with our herbed Dijon mustard sauce, with choice of two sides.",
+    "ingredient": "Soymilk",
+    "measurement": "3 tablespoon"
+  },
+  {
+    "id": 3018,
+    "uid": "3d237c8e-4c70-4f8d-9336-f6d6d86ccc61",
+    "dish": "Bruschette with Tomato",
+    "description": "Thick slices of French toast bread, brown sugar, half-and-half and vanilla, topped with powdered sugar. With two eggs served any style, and your choice of smoked bacon or smoked ham.",
+    "ingredient": "Fennel",
+    "measurement": "1/3 pint"
+  },
+  {
+    "id": 5063,
+    "uid": "b613325a-60c5-4c4b-be18-7c6205fd45dd",
+    "dish": "Peking Duck",
+    "description": "Breaded fried chicken with waffles, and a side of maple syrup.",
+    "ingredient": "Szechuan Pepperberry",
+    "measurement": "1/4 tablespoon"
+  },
+  {
+    "id": 8470,
+    "uid": "d6aa15c2-1a55-40db-b7ea-143ccc3c1a68",
+    "dish": "French Fries with Sausages",
+    "description": "Breaded fried chicken with waffles. Served with maple syrup.",
+    "ingredient": "Okra",
+    "measurement": "1/4 tablespoon"
+  },
+  {
+    "id": 7578,
+    "uid": "4ffb3e36-4a6a-4f21-ad81-c4195fbd1571",
+    "dish": "Tiramisù",
+    "description": "Two butter croissants of your choice (plain, almond or cheese). With a side of herb butter or house-made hazelnut spread.",
+    "ingredient": "Lavender Flowers",
+    "measurement": "1/4 teaspoon"
+  },
+  {
+    "id": 6138,
+    "uid": "ce1e5d61-296f-4c8e-909f-50e4ff0f3715",
+    "dish": "Linguine with Clams",
+    "description": "Creamy mascarpone cheese and custard layered between espresso and rum soaked house-made ladyfingers, topped with Valrhona cocoa powder.",
+    "ingredient": "Lettuce",
+    "measurement": "3 teaspoon"
+  },
+  {
+    "id": 1135,
+    "uid": "9a035709-aa13-4b93-a347-a7c8411f15b3",
+    "dish": "Sushi",
+    "description": "Creamy mascarpone cheese and custard layered between espresso and rum soaked house-made ladyfingers, topped with Valrhona cocoa powder.",
+    "ingredient": "Annatto Seed",
+    "measurement": "1/2 quart"
+  },
+  {
+    "id": 2792,
+    "uid": "4684b8ba-babb-4511-9027-098d78ca4f24",
+    "dish": "Chicken Parm",
+    "description": "Fresh parsley, Italian sausage, shallots, garlic, sun-dried tomatoes and mozzarella cheese in an all-butter crust. With a side of mixed fruits.",
+    "ingredient": "Walnut",
+    "measurement": "3 pint"
+  },
+  {
+    "id": 3032,
+    "uid": "d00b6107-3aa8-4448-8362-9b7ce8daad81",
+    "dish": "Chilli con Carne",
+    "description": "Three egg whites with spinach, mushrooms, caramelized onions, tomatoes and low-fat feta cheese. With herbed quinoa, and your choice of rye or whole-grain toast.",
+    "ingredient": "Yellow Papaw",
+    "measurement": "1 gallon"
+  },
+  {
+    "id": 2479,
+    "uid": "d91bca54-cfae-4555-8160-350ea84fbd25",
+    "dish": "California Maki",
+    "description": "Three egg whites with spinach, mushrooms, caramelized onions, tomatoes and low-fat feta cheese. With herbed quinoa, and your choice of rye or whole-grain toast.",
+    "ingredient": "Potato Flour",
+    "measurement": "3 quart"
+  },
+  {
+    "id": 4117,
+    "uid": "8668dfc7-500a-47bb-8f36-473d64ece05e",
+    "dish": "Fish and Chips",
+    "description": "Smoked salmon, poached eggs, diced red onions and Hollandaise sauce on an English muffin. With a side of roasted potatoes.",
+    "ingredient": "Fresh Chillies",
+    "measurement": "1/2 teaspoon"
+  }
+]
